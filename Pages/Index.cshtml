@@ -1,0 +1,132 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - Shreyak Mukherjee</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: linear-gradient(135deg, #1f1c2c, #928dab);
+            color: #fff;
+            text-align: center;
+        }
+        header {
+            padding: 50px 10px;
+        }
+        h1 {
+            font-size: 3rem;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background: #4caf50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background: #45a049;
+        }
+        section {
+            padding: 20px;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .project {
+            background: #333;
+            color: #fff;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+        .project:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background: #000;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shreyak Mukherjee</h1>
+        <p>Web Developer | AI & ML Enthusiast | Cloud Practitioner</p>
+        <a href="https://www.linkedin.com/in/shreyak-mukherjee-203558275/" class="btn">LinkedIn</a>
+        <a href="https://github.com/shreyakmukherjee" class="btn">GitHub</a>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>
+            Hello! I’m a B.Tech student with a strong passion for Machine Learning,
+            Deep Learning, and Cloud Computing. I have hands-on experience in Azure
+            Cloud and a solid background in full-stack web development, particularly
+            using React, Tailwind, and Vite.
+        </p>
+        <p>
+            Beyond development, I actively explore Data Mining, Data Warehousing,
+            and Research Methodology to enhance my analytical skills. I also enjoy
+            tackling LeetCode problems and refining my problem-solving abilities.
+        </p>
+        <p>
+            I’m always eager to learn, innovate, and contribute to projects that
+            bridge the gap between technology and real-world applications. Feel free
+            to connect with me to discuss ideas, collaborate, or just geek out over
+            tech!
+        </p>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Digital Payment App Wallet</h3>
+                <p>A secure and efficient digital payment solution.</p>
+                <a href="https://github.com/shreyakmukherjee/Digital_Payment_App_Wallet" class="btn">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Sentiment Analysis of Restaurant Reviews</h3>
+                <p>Machine learning-based sentiment analysis on restaurant feedback.</p>
+                <a href="https://github.com/shreyakmukherjee/Sentiment_Analysis_Restaurant_Reviews" class="btn">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Neem Leaf Disease Detection</h3>
+                <p>Deep learning techniques applied for disease detection in neem leaves.</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Portfolio Website</h3>
+                <p>A personal portfolio showcasing my skills and projects.</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Shreyak Mukherjee. All rights reserved.</p>
+    </footer>
+</body>
+</html>
